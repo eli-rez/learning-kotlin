@@ -1,45 +1,56 @@
 HELP.md
 
-.gradle
+### Build artifacts ###
 build/
-target/
+out/
+!gradle/wrapper/gradle-wrapper.properties
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+### Gradle ###
+.gradle/
+.gradle-cache/
+.gradle-test-kit/
+!gradlew
+!gradlew.bat
+
+# Maven
+target/
+
+### Kotlin ###
+*.class
+*.kt~
+*.swp
+*.swo
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# IntelliJ specific (exclude volatile configs)
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/jarRepositories.xml
 
-### VS Code ###
-.vscode/
-
-### Kotlin ###
-.kotlin
-
-### Logging Files ###
+### Logs ###
 *.log
+
+### OS-specific ###
+.DS_Store
+Thumbs.db
+
+### Env files (local secrets) ###
+.env
